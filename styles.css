@@ -1,0 +1,162 @@
+body {
+  width: 320px;
+  padding: 15px;
+  font-family: Arial, sans-serif;
+}
+.section {
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.section:last-child {
+  border-bottom: none;
+}
+.toggle-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.toggle-label {
+  font-size: 14px;
+  color: #333;
+  font-weight: 500;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 24px;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+input:checked + .slider {
+  background-color: #4285f4;
+}
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+.status {
+  font-size: 12px;
+  color: #666;
+  text-align: center;
+  margin-top: 5px;
+}
+.reorg-section h3 {
+  font-size: 13px;
+  margin: 0 0 10px 0;
+  color: #333;
+  font-weight: 500;
+}
+.input-group {
+  margin-bottom: 10px;
+}
+label {
+  display: block;
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 5px;
+}
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 13px;
+  resize: vertical;
+  min-height: 60px;
+  box-sizing: border-box;
+}
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 13px;
+  cursor: pointer;
+  font-weight: 500;
+}
+button:hover {
+  background-color: #357ae8;
+}
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+.message {
+  font-size: 12px;
+  padding: 8px;
+  border-radius: 4px;
+  margin-top: 10px;
+  display: none;
+}
+.message.success {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  display: block;
+}
+.message.error {
+  background-color: #ffebee;
+  color: #c62828;
+  display: block;
+}
+.message.info {
+  background-color: #e3f2fd;
+  color: #1565c0;
+  display: block;
+}
+.server-status {
+  font-size: 11px;
+  color: #666;
+  margin-top: 5px;
+}
+.server-status.online {
+  color: #2e7d32;
+}
+.server-status.offline {
+  color: #c62828;
+}
+
+.progress-container {
+  width: 100%;
+  background-color: #eee;
+  border-radius: 4px;
+  height: 8px;
+  margin: 10px 0;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background-color: #4285f4;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
