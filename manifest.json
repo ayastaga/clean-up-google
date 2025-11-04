@@ -1,25 +1,21 @@
 {
   "manifest_version": 3,
-  "name": "CleanUpGoogle",
+  "name": "CleanUP!",
   "version": "1.0",
-  "description": "Cleans up the Google Page by removing unnessecary elements & AI Overview",
-  "permissions": ["storage", "tabs", "activeTab", "scripting"],
+  "description": "Removes AI Overviews, sponsored results, and unwanted tabs from Google Search",
+  "permissions": ["storage", "activeTab"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Google Search Cleaner"
+  },
   "content_scripts": [
     {
-      "matches": ["*://*.google.com/*", "*://*.google.ca/*"],
-      "css": ["styles.css"],
+      "matches": ["*://*.google.com/search*", "*://*.google.ca/search*"],
       "js": ["content.js"],
+      "css": ["style.css"],
       "run_at": "document_end"
     }
   ],
-  "action": {
-    "default_popup": "popup.html",
-    "default_icon": {
-      "16": "icon16.png",
-      "48": "icon48.png",
-      "128": "icon128.png"
-    }
-  },
   "icons": {
     "16": "icon16.png",
     "48": "icon48.png",
