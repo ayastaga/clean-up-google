@@ -1,4 +1,4 @@
-# clean-up-google
+# CleanUP!
 google is muddled up with a bunch of unnecessary stuff; how about we give you the option to remove it? 
 
 features:
