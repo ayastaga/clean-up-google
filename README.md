@@ -1,4 +1,4 @@
-# 🧹 CleanUP! - Reclaim Your Google Search
+# CleanUP! - Reclaim Your Google Search
 
 > **Google search has become cluttered with AI overviews, sponsored content, and unnecessary noise. CleanUP! gives you back the clean, focused search experience you deserve.**
 
