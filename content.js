@@ -1,4 +1,3 @@
-// content.js
 (function () {
   "use strict";
 
